@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Hexágonos apilados en los colores de distrito de Akropolis -->
+  <rect width="64" height="64" rx="12" fill="#f6f0e0"/>
+  <g stroke="#fbf7ec" stroke-width="1.6">
+    <!-- fila trasera -->
+    <path d="M14 24 L21 20 L28 24 L28 32 L21 36 L14 32 Z" fill="#1479d0"/>
+    <path d="M28 20 L35 16 L42 20 L42 28 L35 32 L28 28 Z" fill="#e8c41f"/>
+    <path d="M42 24 L49 20 L56 24 L56 32 L49 36 L42 32 Z" fill="#74499f"/>
+    <!-- fila delantera, un nivel más abajo -->
+    <path d="M8 36 L15 32 L22 36 L22 44 L15 48 L8 44 Z" fill="#d46d1e"/>
+    <path d="M22 40 L29 36 L36 40 L36 48 L29 52 L22 48 Z" fill="#7eb704"/>
+    <path d="M36 36 L43 32 L50 36 L50 44 L43 48 L36 44 Z" fill="#9b9c98"/>
+  </g>
+</svg>
