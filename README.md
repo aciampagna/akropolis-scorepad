@@ -47,31 +47,6 @@ vercel.json    cabeceras de caché y seguridad
 
 Un solo archivo, sin dependencias, sin build. Las imágenes van embebidas en base64, así que la página funciona sin conexión una vez cargada.
 
-## Google Analytics
-
-La analítica está instalada pero **apagada**. Para encenderla, abrí `index.html`, buscá `var GA_ID` cerca del principio y pegá tu ID de medición de GA4:
-
-```js
-var GA_ID = "G-XXXXXXXXXX";
-```
-
-Mientras esté vacío no se carga ningún script de terceros ni se deja ninguna cookie. Con el ID puesto se registran las visitas y un evento propio, `partida_iniciada`, con la cantidad de jugadores y si se usaron variantes.
-
-También se salta la medición cuando el archivo se abre con `file://`, para no contaminar los datos mientras probás en local.
-
-## Desarrollo local
-
-No hace falta ningún servidor: alcanza con abrir `index.html` en el navegador. Si preferís servirlo:
-
-```bash
-python3 -m http.server 8000
-# http://localhost:8000
-```
-
-## Deploy
-
-Cada push a `main` dispara un deploy automático en Vercel. No hay comando de build: es un sitio estático.
-
 ## Créditos
 
 Reglas, arte e imágenes son de **Akropolis** — Jules Messaud, ilustración de Pauline Détraz, editado por Gigamic. Las fotos provienen de la [ficha del juego en Maldón](https://maldon.com.ar/blog/projects/akropolis/), su distribuidor en Argentina, y se usan aquí de forma no comercial a modo de referencia.
